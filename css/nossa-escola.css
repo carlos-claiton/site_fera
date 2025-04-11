@@ -1,0 +1,193 @@
+.secao{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px 0px;
+}
+.secao >div{
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.secao >div>p{
+    width: 100%;
+    font-size: 60px;
+    margin: 0;
+    color: #df0209;
+}
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.disposicao section{
+    order: 2;
+
+}
+.disposicao section p{
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+}
+.conteudo >p{
+    width: 50%;
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+.conteudo div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+}
+.conteudo div img{
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+.conteudo section{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.conteudo section p{
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.conteudo section h3{
+    width: 100%;
+    text-align: start;
+    font-size: 55px;
+    color: #df0209;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.conteudo section ul{
+    margin: 0;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
+}
+/*=========================================================================================*/
+.imagen-fundo > div> p{
+    display: none;
+
+}
+.descricao{
+    width: 50%;
+    order: 2;
+}
+.conteudo-com-imagem-de-fundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.descricao P{
+    width: 100%;
+    padding: 0;
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
+}
+.descricao h4{
+    width: 100%;
+    font-size: 55px;
+    margin: 0;
+    color: #df0209;
+}
+.imagen-fundo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/fundo-terceira-secao.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    overflow: hidden;   
+  }
+  .imagen-fundo > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1080px;
+    position: relative; 
+    z-index: 2;
+    padding: 30px 0;
+  }
+  .imagen-fundo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  .fundo-preto{
+    background-color: #2f2e2e;
+  }
+
+@media (max-width: 480px) {
+    .conteudo >p{
+        width: 100%;
+    }
+    .conteudo div{
+        width: 100%;
+    }
+    .conteudo section{
+        width: 100%;
+        padding: 10px;
+        order: 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .conteudo >p{
+        width: 100%;
+    }
+    .conteudo div{
+        width: 100%;
+    }
+    .conteudo section{
+        width: 100%;
+        padding: 10px;
+        order: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .conteudo section h3 {
+    font-size: 40px;
+    
+    }
+    .conteudo section{
+        padding: 10px;
+    }
+    .conteudo section p{
+        font-size: 15px;
+    }
+    .conteudo section ul{
+        font-size: 15px;
+    }
+    .conteudo{
+        align-items: center;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .conteudo{
+        align-items: center;
+    }
+}
+@media (min-width: 1367px) {}

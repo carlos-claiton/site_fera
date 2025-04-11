@@ -1,0 +1,74 @@
+.conteiner-formacao{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px 0px;
+}
+.conteiner-formacao>div{
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.descricao-curso{
+    background-color: black;
+    width: 90%;
+    padding: 50px 15px;
+    border-radius: 15px;
+
+}
+.descricao-curso h4{
+    color: #df0209;
+    width: 100%;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+.descricao-curso p,.descricao-curso ul{
+    color: white;
+}
+.galeria-imagens-curso{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.galeria-imagens-curso div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.galeria-imagens-curso div img{
+    width: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+@media (max-width: 480px) {
+    .conteiner-formacao{
+        padding: 50px 5px;
+    }
+    .primeiro-conteiner-pagina-interna p {
+        font-size: 40px;
+    }
+    .descricao-curso{
+        width: 100%;
+    }
+    .descricao-curso p, .descricao-curso ul{
+        font-size: 15px;
+    }
+    .galeria-imagens-curso div{
+        width: 45%;
+    }
+
+  
+}
+@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 1025px) and (max-width: 1366px) {}
+@media (min-width: 1367px) {}

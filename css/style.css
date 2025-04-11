@@ -1,0 +1,1067 @@
+/*=========================== FONTES PERSONALIZADAS ===========================*/
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('fonts/ReadexPro.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Anton';
+    src: url('fonts/Anton.ttf') format('truetype');
+  }
+  
+  /*=============================== ESTILO GERAL ===============================*/
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Anton', cursive;
+  }
+  
+/*=============================== ESTILO HEADER ===============================*/
+  
+  .conteiner-heder {
+    width: 100%;
+  }
+  
+  .conteiner-contato {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  .contato {
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #contato-info {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*=============================== EMAIL ===============================*/
+  
+  .conteiner-emil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+  }
+  
+  .conteiner-emil a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .conteiner-emil section {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+  }
+  
+  #Layer_1 {
+    width: 100%;
+    fill: #df0209;
+  }
+  
+  /*=============================== TELEFONE ===============================*/
+  
+  .conteiner-telefone {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .conteiner-telefone p {
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .conteiner-telefone section {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  
+  .conteiner-telefone section svg {
+    width: 100%;
+    fill: #df0209;
+  }
+  
+  /*========================= NOSSA ESCOLA =========================*/
+  
+  .conteiner-nossa-escola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .conteiner-nossa-escola a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  /*========================= SEÇAO MENU ==========================*/
+  .header-menu-container{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .conteudo-max{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1080px;
+    width: 100%;
+    padding: 10px;
+  }
+  .logo-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-conteiner IMG{
+    width: 100%;
+  }
+  .conteiner-contato{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-links{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-right: 15px;
+    margin: 0;
+  }
+  .menu-links li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    
+    text-transform: uppercase;
+  }
+  .menu-links li a:hover{
+    color: #df0209;
+  }
+  .bnt-contato{
+    font-size: 15px;
+    padding: 5px 15px;
+    font-family: 'Anton', cursive;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #df0209;
+    border: none;
+    border-radius: 10px;
+  }
+/*=========================== MENU SUSPENÇO ===========================*/
+  
+/* Estilo padrão (desktop) */
+.menu-toggle {
+    display: none; /* Esconde o botão no desktop */
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #df0209;
+    cursor: pointer;
+    border: #111;
+  }
+  
+  .menu-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .menu-links li a {
+    text-decoration: none;
+    color: #000;
+    
+  }  
+  /* === BOTÃO HAMBÚRGUER === */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .hamburguer-icon {
+    width: 30px;
+    height: 3px;
+    background: #df0209;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburguer-icon::before,
+  .hamburguer-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #df0209;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburguer-icon::before {
+    top: -10px;
+  }
+  
+  .hamburguer-icon::after {
+    top: 10px;
+  }
+  
+  /* === BOTÃO HAMBÚRGUER VIRA X === */
+  .menu-toggle.active .hamburguer-icon {
+    background: transparent;
+  }
+  
+  .menu-toggle.active .hamburguer-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .menu-toggle.active .hamburguer-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .conteudo-max.menu-aberto {
+    background-color: #000;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .logo {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+  
+  .logo.fade-out {
+    opacity: 0;
+  }
+  
+  /*=====================================================================*/
+  
+  .faixa-vermelha{
+    background-color: #df0209;
+    height: 30px;
+  }
+  /*=========================== MEDIA QUERIES HEDER ===========================*/
+  
+  /* Smartphones pequenos (até 480px) */
+  @media (max-width: 480px) {
+    .logo-conteiner{
+      width: 40%;
+    }
+    .conteiner-telefone p {
+      font-size: 12px;
+    }
+  
+    .conteiner-emil a {
+      font-size: 12px;
+    }
+  
+    .conteiner-emil {
+      padding: 0;
+    }
+  
+    .conteiner-emil section {
+      width: 20px;
+      padding-right: 5px;
+    }
+  
+    #contato-info {
+      width: 70%;
+      padding: 0;
+      justify-content: left;
+    }
+  
+    .conteiner-nossa-escola {
+      width: 30%;
+      justify-content: flex-end;
+    }
+  
+    .contato {
+      padding: 5px 10px;
+    }
+    /*=================================// menu suspenço //============================*/
+    .conteudo-max {
+      flex-wrap: wrap;
+      position: relative;
+  }
+  .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: #df0209;
+      cursor: pointer;
+      z-index: 999;
+  }
+  .contato {
+    padding: 5px 10px;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+  
+  .nav-conteiner {
+      display: none;
+      flex-direction: column;
+      background-color: #111;
+      width: 100%;
+      top: 100%; /* aparece abaixo do menu */
+      left: 0;
+      padding: 10px 0;
+      z-index: 998;
+  }
+  
+  .nav-conteiner.active {
+      display: flex;
+  }
+  
+  .menu-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+  
+  .bnt-contato {
+      margin-top: 10px;
+      display: none;
+  }
+  .menu-toggle {
+  display: block;
+  }
+
+  .nav-conteiner {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 15px 0;
+  z-index: 998;
+  }
+
+  .nav-conteiner.active {
+  display: flex;
+  }
+
+  .menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  }
+
+  .menu-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  }
+  }
+  
+  /* Smartphones médios (481px até 767px) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .conteiner-telefone p {
+      font-size: 12px;
+    }
+  
+    .conteiner-emil a {
+      font-size: 12px;
+    }
+  
+    .conteiner-emil {
+      padding: 0;
+    }
+  
+    .conteiner-emil section {
+      width: 20px;
+      padding-right: 5px;
+    }
+  
+    #contato-info {
+      width: 70%;
+      padding: 0;
+      justify-content: left;
+    }
+  
+    .conteiner-nossa-escola {
+      width: 30%;
+      justify-content: flex-end;
+    }
+    .logo-conteiner{
+
+        width: 90px;
+    }
+
+
+
+  /*=================================// menu suspenço //============================*/
+    .conteudo-max {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: #df0209;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .contato {
+      padding: 5px 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-conteiner {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        top: 100%; /* aparece abaixo do menu */
+        left: 0;
+        padding: 10px 0;
+        z-index: 998;
+    }
+    
+    .nav-conteiner.active {
+        display: flex;
+    }
+    
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .bnt-contato {
+        margin-top: 10px;
+        display: none;
+    }
+    .menu-toggle {
+    display: block;
+    }
+
+    .nav-conteiner {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #111;
+    padding: 15px 0;
+    z-index: 998;
+    }
+
+    .nav-conteiner.active {
+    display: flex;
+    }
+
+    .menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    }
+
+    .menu-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    }
+
+/*====================================================================================*/
+  }
+  
+  /* Tablets (768px até 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .contato {
+      padding: 5px 10PX;
+    }
+  
+    #contato-info {
+      width: 40%;
+    }
+    .logo-conteiner{
+      width: 60px;
+    }
+  }
+  
+  /* Laptops (1025px até 1366px) */
+  @media (min-width: 1025px) and (max-width: 1366px) {
+    .contato {
+      padding: 5px 10;
+    }
+  
+    #contato-info {
+      width: 35%;
+      justify-content: start;
+    }
+  
+    .conteiner-emil section {
+      width: 20px;
+    }
+  
+    .conteiner-telefone p {
+      font-size: 15px;
+    }
+  
+    .conteiner-telefone section {
+      width: 20px;
+    }
+    .logo-conteiner{
+      width: 65px;
+    }
+
+     /*========================= SEÇAO MENU ==========================*/
+
+
+    .logo-conteiner{
+        width: 65PX;
+        padding: 5px;
+    }
+    .conteudo-max{
+        justify-content: space-between;
+    }
+    .bnt-contato{
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    .menu-links li a{
+        font-size: 20px;
+    }
+  }
+  
+  /* Telas grandes / desktops (acima de 1366px) */
+  @media (min-width: 1367px) {
+    /* Você pode adicionar estilos extras aqui, se necessário */
+
+    .contato {
+      padding: 5px 10;
+    }
+  
+    #contato-info {
+      width: 35%;
+      justify-content: start;
+    }
+  
+    .conteiner-emil section {
+      width: 20px;
+    }
+  
+    .conteiner-telefone p {
+      font-size: 15px;
+    }
+  
+    .conteiner-telefone section {
+      width: 20px;
+    }
+    .logo-conteiner{
+      width: 65px;
+    }
+
+     /*========================= SEÇAO MENU ==========================*/
+
+
+    .logo-conteiner{
+        width: 65PX;
+        padding: 5px;
+    }
+    .conteudo-max{
+        justify-content: space-between;
+    }
+    .bnt-contato{
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    .menu-links li a{
+        font-size: 20px;
+    }
+  }
+/*=============================================================================*/
+
+
+
+
+
+/*=============================== ESTILO FOOTER ==============================*/
+
+/*==============// ESTILO GERAL //==============*/
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eceff8;
+}
+.conteiner-geral-footer{
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+.conteiner-geral-footer > div{
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/*==============================================*/
+
+/*==============// ESTILO LOGO //==============*/
+.conteiner-logo-footer-fera{
+  width: 50%;
+  padding: 10PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner-logo-footer-fera img{
+  width: 100%;
+}
+/*===========================================*/
+
+/*==============// ESTILO LOGO REDES //==============*/
+.redes-sociais-footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-redes-sociais{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.container-redes-sociais svg{
+  width: 100%;
+  fill: #df0209;
+}
+.container-redes-sociais svg:hover{
+  fill: #000;
+}
+/*==================================================*/
+
+/*==============// ESTILO LINKS SITE //==============*/
+.container-links-site P,
+.dados-fera P,
+.formulario-contato p{
+  font-size: 30PX;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0;
+  color: #df0209;
+}
+.container-links-site ul,
+.dados-fera ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10PX;
+  padding: 0;
+  margin: 0px;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: bold;
+}
+.container-links-site a{
+  text-decoration: none;
+  color:#000 
+}
+.dados-fera{
+  text-align: start;
+  width: 100%;
+}
+
+/*==================================================*/
+
+
+
+.formulario-contato {
+  width: 100%;
+}
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-contato input {
+  padding: 10px 10px;
+  border: 1px solid #df0209;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #000; /* pode ajustar conforme o fundo do site */
+  font-size: 1rem;
+}
+
+.formulario-contato input::placeholder {
+  color: #000;
+  opacity: 0.8;
+  font-family: 'Anton', cursive;
+}
+
+.formulario-contato button {
+  padding: 0.75rem;
+  width: 50%;
+  background-color: #df0209;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Anton', cursive;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.formulario-contato button:hover {
+  background-color: #b60207;
+}
+
+/* ============================================================
+   RESPONSIVIDADE – ESTILOS DO FOOTER
+   ============================================================ */
+
+/* ==== Celulares pequenos (até 480px) ==== */
+@media (max-width: 480px) {
+  /* estilos para celulares pequenos */
+
+  /*==============// ESTILO GERAL //==============*/
+    .conteiner-geral-footer > div{
+      width: 100%;
+      padding: 10px;
+    }
+  /*==============================================*/
+
+  /*==============// ESTILO LOGO //==============*/
+    .conteiner-logo-footer-fera{
+      width: 40%;
+      padding: 15PX;
+    }
+  /*===========================================*/
+
+  /*==============// ESTILO LOGO REDES //==============*/
+    .container-redes-sociais{
+      width: 10%;
+      padding: 15px;
+    }
+  /*==================================================*/
+
+  /*==============// ESTILO LINKS SITE //==============*/
+    .container-links-site P,
+    .dados-fera P,
+    .formulario-contato p{
+      font-size: 30PX;
+      width: 100%;
+      text-align: center;
+    }
+    .container-links-site ul,
+    .dados-fera ul{
+      flex-direction: column;
+      text-align: center;
+      font-size: 20PX;
+    }
+  /*==================================================*/
+}
+
+/* ==== Celulares médios e grandes (481px a 767px) ==== */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* estilos para celulares médios/grandes */
+  /*==============// ESTILO GERAL //==============*/
+  .conteiner-geral-footer > div{
+    width: 100%;
+    padding: 15px;
+  }
+/*==============================================*/
+
+/*==============// ESTILO LOGO //==============*/
+  .conteiner-logo-footer-fera{
+    width: 40%;
+    padding: 15PX;
+  }
+/*===========================================*/
+
+/*==============// ESTILO LOGO REDES //==============*/
+  .container-redes-sociais{
+    width: 10%;
+    padding: 15px;
+  }
+/*==================================================*/
+
+/*==============// ESTILO LINKS SITE //==============*/
+  .container-links-site P,
+  .dados-fera P,
+  .formulario-contato p{
+    font-size: 30PX;
+    width: 100%;
+    text-align: center;
+  }
+  .container-links-site ul,
+  .dados-fera ul{
+    flex-direction: column;
+    text-align: center;
+    font-size: 20PX;
+  }
+/*==================================================*/
+}
+/* ==== Tablets (768px a 1024px) ==== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets em retrato e paisagem */
+   /*==============// ESTILO GERAL //==============*/
+   .conteiner-geral-footer > div{
+    width: 60%;
+    padding: 15px;
+  }
+/*==============================================*/
+
+/*==============// ESTILO LOGO //==============*/
+  .conteiner-logo-footer-fera{
+    width: 40%;
+    padding: 15PX;
+  }
+/*===========================================*/
+
+/*==============// ESTILO LOGO REDES //==============*/
+  .container-redes-sociais{
+    width: 10%;
+    padding: 15px;
+  }
+/*==================================================*/
+
+/*==============// ESTILO LINKS SITE //==============*/
+  .container-links-site P,
+  .dados-fera P,
+  .formulario-contato p{
+    font-size: 30PX;
+    width: 100%;
+    text-align: center;
+  }
+  .container-links-site ul,
+  .dados-fera ul{
+    flex-direction: column;
+    text-align: center;
+    font-size: 20PX;
+  }
+/*==================================================*/
+}
+.container-entre-em-contato{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/fundo-terceira-secao.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+  overflow: hidden;
+}
+.container-entre-em-contato::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.container-entre-em-contato > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1080px;
+  position: relative; 
+  z-index: 2;
+  padding: 60px 0;
+}
+.container-informacaos{
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+}
+.container-informacaos h2{
+  font-size: 60px;
+  text-align: start;
+  color: #df0209;
+  width: 100%;
+  margin: 0;
+}
+.container-informacaos p{
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Readex Pro', sans-serif;
+  color: white;
+}
+.formulario-de-contato{
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.formulario-de-contato form div {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.formulario-de-contato form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 1rem;
+  justify-content: center;
+  text-align: right;
+  
+}
+
+.formulario-de-contato input {
+  padding: 10px 10px;
+  border: 1px solid #df0209;
+  
+  border-radius: 10px;
+  color: #000; /* pode ajustar conforme o fundo do site */
+  font-size: 1rem;
+}
+
+.formulario-de-contato input::placeholder {
+  color: #000;
+  opacity: 0.8;
+  font-family: 'Anton', cursive;
+}
+
+.formulario-de-contato button {
+  padding: 0.75rem;
+  width: 50%;
+  background-color: #df0209;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Anton', cursive;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.formulario-de-contato button:hover {
+  background-color: #b60207;
+}
+@media (max-width: 480px) {
+  .container-entre-em-contato > div{
+    padding: 10px 20px;
+  }
+
+  .container-informacaos{
+    width: 100%;
+  }
+  .container-informacaos h2{
+    font-size: 40px;
+  }
+  .container-informacaos p{
+    font-size: 15px;
+  }
+  .formulario-de-contato{
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-informacaos h2 {
+    font-size: 24px;
+  }
+  .container-informacaos p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-informacaos h2 {
+    font-size: 40px;
+  }
+  .container-informacaos p {
+    font-size: 16px;
+  }
+}
+/*====================|| PRIMEIRO CONTEINER INTERNO ||====================*/
+.primeiro-conteiner-pagina-interna {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/IMG_4686.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+  overflow: hidden;   
+  }
+  .primeiro-conteiner-pagina-interna > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1080px;
+  position: relative; 
+  z-index: 2;
+  padding: 60px 0;
+  min-height: 120px;
+  }
+  .primeiro-conteiner-pagina-interna::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  }
+  .primeiro-conteiner-pagina-interna p{
+  width: 100%;
+  text-align: center;
+  color: #df0209;
+  font-size: 50px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  /*========================================================================*/

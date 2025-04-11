@@ -1,0 +1,228 @@
+.conteiner-geral-contato{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px 0px;
+}
+.conteiner-geral-contato>div{
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulario-de-contato {
+   width: 49%;
+   
+}
+
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: 'Anton', cursive;
+  }
+  
+  .formulario input,
+  .formulario select,
+  .formulario textarea {
+    
+    padding: 12px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .formulario input::placeholder,
+  .formulario textarea::placeholder {
+    color: #000;
+  }
+  
+  .formulario .linha-dupla {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .formulario .linha-dupla input {
+    flex: 2;
+  }
+  
+  .formulario .linha-dupla select {
+    flex: 1;
+  }
+  
+  .formulario button {
+    align-self: flex-end;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+    transition: background 0.3s;
+  }
+  
+  .formulario button:hover {
+    background-color: #222;
+  }
+  /* Força a fonte nos placeholders */
+.formulario input::placeholder,
+.formulario textarea::placeholder,
+.formulario select {
+  font-family: 'Anton', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .formulario .linha-dupla {
+      flex-direction: column;
+    }
+  
+    .formulario button {
+      align-self: stretch; /* faz o botão ocupar 100% no mobile (ou use flex-end se preferir manter à direita) */
+    }
+    .formulario-de-contato {
+        width: 100%;
+        
+     }
+}
+/*==========================================================================================*/
+
+.imformacoes{
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+}
+@media (max-width: 480px) {
+  .imformacoes{
+    width: 100%;
+    padding: 10px;
+  }
+  .redes a{
+    width: 10%;
+  }
+  .conteiner-geral-localizacao div p {
+    font-size: 40px;
+  }
+}
+
+
+
+
+ 
+
+/*==========================================================================================*/
+
+.telefone,
+.email,
+.endereco,
+.redes{
+    width: 100%;
+}
+.telefone h4,
+.email h4,
+.endereco h4,
+.redes h4{
+    margin: 0;
+    width: 100%;
+    color: #df0209;
+    font-size: 40px;
+}
+.telefone p,
+.email p,
+.endereco p,
+.redes p{
+    margin: 0;
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+}
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+.redes a{
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-geral-localizacao{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px 0px;
+}
+.conteiner-geral-localizacao > div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+}
+
+/*==================================================================*/
+.conteiner-geral-localizacao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/fundo-terceira-secao.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    overflow: hidden;   
+  }
+  .conteiner-geral-localizacao > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1080px;
+    position: relative; 
+    z-index: 2;
+    padding: 30px 0;
+  }
+  .conteiner-geral-localizacao::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  .conteiner-geral-localizacao  div p{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: #df0209;
+    margin: 0px;
+  }
+  .localizacao{
+    width: 100%; 
+  }
+  .localizacao iframe{
+    width: 100%;
+  }
+/*==================================================================*/
+@media (max-width: 480px) {
+	.redes a{
+   		 width: 10%;
+  	}
+  	.conteiner-geral-localizacao div p {
+    		font-size: 40px;
+  	}
+	
+}

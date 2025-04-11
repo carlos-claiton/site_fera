@@ -1,0 +1,175 @@
+.conteiner-blog{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px 0px;
+}
+.conteiner-blog > div{
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*===============================================================*/
+.pesquisa{
+    width: 20%;
+    order: 2;
+    padding: 10px;
+    box-sizing: border-box; /* MUITO IMPORTANTE! */
+}
+.postagens{
+    width: 70%;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagem-post{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.post {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row; /* Ordem padrão: imagem à esquerda */
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    align-items: flex-start;
+    border-radius: 15px;
+}
+
+
+.imagem-post {
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.imagem-post img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 8px; /* opcional, pra dar um charme */
+    object-fit: cover;
+}
+
+.descricao {
+    width: 70%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.descricao h3{
+    color: #df0209;
+    font-size: 40px;
+    width: 100%;
+    margin: 0px;
+}
+.descricao p{
+    font-size: 15px;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;   /* número de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.botao-ler-mais button {
+    background-color: white;
+    color: black;
+    border: solid #df0209 2px;
+    padding: 2px 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+}
+
+.pesquisa-container {
+    width: 100%; /* assume os 20% definidos pelo container pai */
+    display: flex;
+    align-items: center;
+  }
+  
+  .pesquisa-container input {
+    flex: 1; /* ocupa todo o espaço disponível */
+    border: solid black 2px;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    width: 80%;
+    height: 42px;
+  }
+  
+  .pesquisa-container button {
+    background-color: #000;
+    color: white;
+    border: none;
+    width: 20%; 
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+  }
+  
+  .pesquisa-container button:hover {
+    background-color: #000;
+  }
+  .pesquisa p{
+    font-size: 30px ;
+    color: #df0209;
+    margin: 0;
+    padding: 0;
+
+  }
+@media (max-width: 480px) {
+    .imagem-post{
+        width: 100%;
+        
+    }
+    .post{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .pesquisa{
+        width: 100%;
+        order: 0;
+    }
+    .postagens{
+        width: 100%;
+        padding: 5px;
+    }
+    .descricao {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .pesquisa{
+        width: 100%;
+        order: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pesquisa{
+        width: 70%;
+        order: 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {}
+@media (min-width: 1367px) {}

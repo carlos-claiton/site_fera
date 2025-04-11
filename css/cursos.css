@@ -1,0 +1,129 @@
+.conteiner-calendario{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner-data{
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 0px;
+}
+.conteiner-data p{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: bold;
+}
+.data{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 10px 10px;
+    min-height: 300px;
+    border-radius: 15px;
+    gap: 20px;
+}
+.data p{
+    color: #df0209;
+    font-family: 'Anton', cursive;
+    font-size: 50px;
+    margin: 0;
+}
+.data h2{
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
+.botao-curso{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.botao-curso button{
+    width: 85%;
+    padding: 15px 0px;
+    border-radius: 15px;
+    border: solid #df0209 4px;
+    background-color: white;
+    font-family: 'Anton', cursive;
+    font-size: 20px;
+    color: #df0209;
+    
+}
+.botao-garanta-sua-vaga{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botao-garanta-sua-vaga button{
+    width: 85%;
+    padding: 15px 0px;
+    border-radius: 15px;
+    border: none;
+    background-color: #df0209;
+    font-family: 'Anton', cursive;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+.botao-garanta-sua-vaga button:hover{
+    background-color: white;
+    color: black;
+    border: solid 2px #df0209;
+}
+.conteiner-image-curso{
+    width: 100%;
+}
+.conteiner-image-curso img{
+    width: 100%;
+    border-radius: 15PX;
+}
+@media (max-width: 480px) {
+    .data{
+        width: 100%;
+    }
+    .conteiner-data{
+        padding: 10PX;
+    }
+    .conteiner-data >p{
+        font-size: 15PX;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .data{
+        width: 100%;
+    }
+    .conteiner-data{
+        padding: 10PX;
+    }
+    .conteiner-data >p{
+        font-size: 15PX;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .data{
+        width: 45%;
+    }
+    .conteiner-data{
+        padding: 10PX;
+    }
+}
